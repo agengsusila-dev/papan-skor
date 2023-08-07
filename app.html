@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Papan Skor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="flex justify-center place-content-center w-screen h-screen bg-violet-950"
+    >
+      <div class="grid grid-cols-3 gap-12 place-items-center">
+        <div class="col-span-3">
+          <div class="mx-auto max-w-screen-xl px-4">
+            <div class="justify-center place-items-center">
+              <div class="text-center">
+                <h1 class="text-3xl font-bold text-gray-100">
+                  Lapangan Serbaguna RW 021
+                </h1>
+                <p class="mt-1.5 text-sm text-gray-400">
+                  Panitia Penyelenggara Lomba 17 Agustus 2023 RW 021
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-96 rounded-lg">
+          <article class="group">
+            <img
+              alt="Home's Logo"
+              src="./assets/logo-home.svg"
+              class="h-96 w-full rounded-full object-center transition bg-white group-hover:grayscale-[50%]"
+            />
+            <div class="p-4">
+              <h3
+                id="home-name-team"
+                class="text-2xl font-medium text-center text-gray-100"
+              >
+                Kartar One
+              </h3>
+              <h3
+                id="away-name-team"
+                class="text-lg font-medium text-center text-gray-400"
+              >
+                Home Team
+              </h3>
+            </div>
+          </article>
+        </div>
+        <div class="w-96">
+          <div class="border-4 border-emerald-400 rounded-full bg-gray-700">
+            <h3 class="p-2 text-4xl text-center text-emerald-400">
+              Skor Pertandingan
+            </h3>
+          </div>
+          <div class="p-4 flex gap-10 items-center justify-between">
+            <p
+              id="score-home"
+              class="text-9xl font-bold text-gray-100 text-center"
+            >
+              0
+            </p>
+            <p class="text-5xl font-bold text-gray-100 text-center">:</p>
+            <p
+              id="score-away"
+              class="text-9xl font-bold text-gray-100 text-center"
+            >
+              0
+            </p>
+          </div>
+          <div class="p-4 flex gap-10 items-center justify-between">
+            <button
+              id="plus-home-score"
+              class="border-2 border-emerald-400 p-2 rounded-lg text-4xl font-bold text-emerald-400 text-center"
+            >
+              +1
+            </button>
+            <button
+              id="reset-score"
+              class="border-2 border-red-500 p-2 rounded-lg text-2xl text-center text-red-500"
+            >
+              Reset
+            </button>
+            <button
+              id="plus-away-score"
+              class="border-2 border-emerald-400 p-2 rounded-lg text-4xl font-bold text-emerald-400 text-center"
+            >
+              +1
+            </button>
+          </div>
+        </div>
+        <div class="w-96 rounded-lg">
+          <article class="group">
+            <img
+              alt="Away's Logo"
+              src="./assets/logo-away.svg"
+              class="h-96 w-full rounded-full object-center transition bg-white group-hover:grayscale-[50%]"
+            />
+            <div class="p-4">
+              <h3 class="text-2xl font-medium text-center text-gray-100">
+                Young Three Association
+              </h3>
+              <h3 class="text-lg font-medium text-center text-gray-400">
+                Away Team
+              </h3>
+            </div>
+          </article>
+        </div>
+        <div class="w-screen col-span-3">
+          <div class="mx-auto max-w-screen-xl px-4">
+            <div class="text-center">
+              <h1 class="text-3xl font-bold text-gray-100">
+                Oleh Ageng Susila
+              </h1>
+              <p class="mt-1.5 text-sm text-gray-500">
+                Copyright-Free kok, boleh dipake siapa aja. Semangat menjadi
+                babu Karang Taruna-nya!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
